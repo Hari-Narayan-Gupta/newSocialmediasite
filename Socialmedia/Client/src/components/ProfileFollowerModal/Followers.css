@@ -1,0 +1,8 @@
+.follower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    font-size: 13px;
+}

@@ -1,0 +1,36 @@
+/* .Home {
+    position: relative;
+    display: grid;
+    grid-template-columns: 16rem auto 16rem;
+    gap: 1rem;
+  } */
+ 
+
+  .Home {
+    position: relative;
+    display: grid;
+    grid-template-columns: 60rem auto;
+    gap: 1rem;
+  }
+
+  @media (max-width: 992px) {  
+    .Home {
+    position: relative;
+    display: grid;
+    grid-template-columns: 45rem auto ;
+    gap: 1rem;
+  } 
+}
+
+
+
+  @media (max-width: 768px) {
+    .Home {
+      position: relative;
+      display: block; 
+      /* grid-template-columns: 18rem auto 20rem; */
+      gap: 1rem;
+    }
+  }
+
+ 

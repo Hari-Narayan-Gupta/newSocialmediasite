@@ -1,0 +1,29 @@
+.Profile{
+    position: relative;
+    display: grid;
+    grid-template-columns: 18rem auto 20rem;
+    gap: 1rem;
+}
+
+
+.Profile-center{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .Profile{
+        grid-template-columns: auto 20rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .Profile{
+        position: relative;
+        display: block;
+        grid-template-columns: auto 20rem;
+        gap: 1rem;
+    }
+    
+  }

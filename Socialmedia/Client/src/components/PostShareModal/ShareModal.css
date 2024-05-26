@@ -1,0 +1,78 @@
+/* ShareModal.css */
+.share-modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0; /* Set the modal to the right side of the screen */
+    transform: translateY(3%);
+    z-index: 1000;
+    height: 100vh;
+    width: 27%; /* Adjust the width as needed */
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 100vh;
+}
+  
+  .share-modal-close{
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 19px;
+  }
+  .sharePost{
+    align-items: center;
+  }
+  .checkmark{
+    color: #fff; /* Set text color */
+    font-weight: bold; /* Make the checkmark bold */
+    border: 2px solid #44c75a; /* Set border color */
+    border-radius: 50%; /* Make it a circle */
+    font-size: 18px; /* Adjust font size */
+    width: 20px; /* Set width */
+    height: 20px; /* Set height */
+    display: flex; /* Center content horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: #1dcd1d; /* Set background color */
+  }
+
+  .share{
+    height: 3rem;
+    width: 100%;
+    margin: auto;
+  }
+  .shareButton {
+    position: fixed;
+    bottom: 55px;
+    left: 0;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+  @media screen and (max-width: 500px) {
+    .share-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0; /* Set the modal to the left side of the screen */
+        transform: translateY(0); /* Reset the transform */
+        z-index: 1000;
+        height: 100vh;
+        width: 100%; /* Make the modal full width */
+        background-color: white;
+        border-radius: 0; /* Remove border radius */
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+        max-height: 100vh;
+    }
+    .share-modal-body{
+        margin-top: 10px;
+    }
+
+  }
